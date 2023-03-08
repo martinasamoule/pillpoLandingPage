@@ -1,0 +1,251 @@
+<!-- tobar  -->
+<div class="navBar d-flex flex-row p-2">
+    <div class="logoContainer d-flex flex-row ">
+      <img src="assets\Group.png" class="logoImage">
+      <div class="text-black fs-5 m-2 fw-bold">Pillpo</div>
+    </div>
+    <div class="tabsContainer d-flex mt-1">
+      <a  class="m-2 active"href="#firstSection" >
+        <span class="m-2">Home</span>
+      </a>
+      <a class="m-2" href="#secSection">
+        <span class="title ">How we do it</span>
+      </a>
+      <a class="m-2 " href="#fifthSection">
+        <span class="title ">Our interests</span>
+      </a>
+      <a class="m-2 " href="#sixthSection">
+        <span class="title">Values</span>
+      </a>
+      <a class="m-2 " href="#seventhSection">
+        <span class="title">Contact Us</span>
+      </a>
+    </div>
+    <div id="lines" > <mat-icon (click)="toggle()" class="d-flex mt-1 ms-3">view_headline</mat-icon></div>
+    <div class="navslide navslide2 ms-3 mt-4" *ngIf="showNavBar">
+      <ul class="navslideul ps-2 nav-tabs " >
+          <li class="m-2"><a href="#firstSection" (click)="toggle()">Home</a></li>
+          <li class="m-2"><a href="#secSection" (click)="toggle()">How we do it</a></li>
+          <li class="m-2"><a href="#fifthSection" (click)="toggle()">Our interests</a></li>
+          <li class="m-2"><a href="#sixthSection" (click)="toggle()">Values</a></li>
+          <li class="m-2"><a href="#seventhSection" (click)="toggle()">Contact Us</a></li>
+      </ul>
+  </div>
+  
+  </div>
+  <section class="pageBody">
+    <section id="firstSection" class="scrollArea">
+      <div class="container-fluid mt-5 pt-5">
+        <div class="row ">
+          <div class="col-md-5 d-flex flex-column justify-content-center  pt-5 ps-3 sectionContainer">
+            <p class="sectionParg pt-5 fs-4 lh-base ps-3 mb-5"><strong class="fontColor">Pillpo</strong>
+              is the place where you children can be grown in a healthy environment.
+            </p>
+            <div class=" mt-2 ">
+              <button class="btn btn-link sectionBtn"
+                onclick='window.location.href = "https://play.google.com/store/games"'><img src="assets\googleplay.png"
+                  class="sectionBtnImage"></button>
+              <button class="btn btn-link sectionBtn" (click)="openSnackBar('We will be in appstore soon... ')"><img src="assets\appstore.png" class="sectionBtnImage"></button>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex pe-0 mt-5  ">
+            <div class="d-flex firstSectionImage me-2 pe-2 ms-5 ms-auto">
+              <img src="assets\images_png\1-1.png" class="imageSize m-5 ps-5 ms-5">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="secSection" class="mt-5 mb-5 scrollArea">
+      <div class="container-fluid">
+        <div class="row secSection">
+          <div class="col-md-5 d-flex flex-column justify-content-center  ps-3 sectionContainer pt-4">
+            <p class="fs-4 fw-bold ps-5">Childern App</p>
+            <p class="sectionParg pt-2 fs-5 lh-base ps-5 mb-5">
+              Engaging and age-appropriate content that keeps young minds engaged.
+            </p>
+          </div>
+          <div class="col-md-6 d-flex pe-0 mt-5 ">
+            <div class="d-flex secSectionImage me-5 pe-2  ms-auto">
+              <img src="assets\images_png\2-1.png" class="secSectionImageSize ">
+              <img src="assets\images_png\2-2.png" class="secSectionImageSize mt-5 pt-5 me-2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="thirdSection" class=" mb-3 pt-3 scrollArea">
+      <div class="container-fluid">
+        <div class="row thirdSection">
+          <div class="col-md-6 d-flex ps-0 mt-5 ms-3 mb-5">
+            <div class="d-flex thirdSectionImage  me-2 pe-2">
+              <img src="assets\images_png\3-1.png" class="thirdSectionImageSize ps-5 ">
+              <img src="assets\images_png\3-2.png" class="thirdSectionImageSize ps-5 mt-5 pt-5">
+            </div>
+          </div>
+          <div class="col-md-5 d-flex flex-column justify-content-center">
+            <p class="fs-4 fw-bold ps-5">Parent monitoring </p>
+            <p class="sectionParg pt-2 fs-5 lh-base ps-5 mb-5">
+              parents ensure the safety and well-being of their children.
+              It involves monitoring their online activities building new habits .
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fourthSection" class=" pt-5 mb-5 scrollArea">
+      <div class="container-fluid">
+        <div class="row fourthSection">
+          <div class="col-md-5 d-flex flex-column justify-content-center  ps-3 sectionContainer pt-4">
+            <p class="fs-4 fw-bold ">Content monitoring </p>
+            <p class="sectionFourthParg pt-2 fs-5 lh-base  mb-5">
+              content monitoring platform that helps organizations ensure the quality,
+              accuracy and integrity of their content. It provides comprehensive analytics,
+              automated checks and warnings,and detailed reports that identify any content that is inaccurate,
+              incomplete or inappropriate .
+            </p>
+          </div>
+          <div class="col-md-6 d-flex pe-0 mt-5 me-2">
+            <div class="d-flex fourthSectionImage ms-auto me-5 pe-2">
+              <img src="assets\images_png\4-1.png" class="fourthSectionImageSize ">
+              <img src="assets\images_png\4-2.png" class="fourthSectionImageSize mt-5 pt-5 pe-3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="fifthSection" class=" pt-5 scrollArea">
+      <div class="container-fluid">
+        <div class="row fifthSection">
+          <div class="col-md-5 d-flex flex-column justify-content-center  ps-1 sectionContainer mt-3 pt-3">
+            <p class="fs-4 fw-bold ps-5">Our interest </p>
+            <p class="sectionFourthParg pt-2 fs-5 lh-base ps-5 mb-5">
+              content monitoring platform that helps organizations ensure the quality,
+              accuracy and integrity of their content. It provides comprehensive analytics,
+              automated checks and warnings, and detailed reports that identify any content that is inaccurate,
+              incomplete, or inappropriate .
+            </p>
+          </div>
+          <div class="col-md-6 d-flex pe-0  videoDiv ms-4">
+            <vg-player class="videoContanier ms-2 mt-5">
+              <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls class="fifthSectionVideo">
+                <source src="assets/video.mp4" type="video/mp4">
+              </video>
+            </vg-player>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sixthSection" class="mt-5 pt-5 scrollArea">
+      <div class="container-fluid">
+        <div class="row sixthSection">
+          <div class="flex-wrap">
+            <img  src="assets/6-1.jpg" class="ms-3 sixthSectionImage1 mb-4">
+            <img  src="assets/6-2.jpg" class="ms-3 sixthSectionImage2 mb-4">
+            <img  src="assets/6-3.jpg" class="ms-3 sixthSectionImage3 mb-4">
+            <img  src="assets/6-4.jpg" class="ms-3 sixthSectionImage4">
+            <img  src="assets/6-5.jpg" class="ms-3 sixthSectionImage5">
+            <img  src="assets/6-6.jpg" class="ms-3 sixthSectionImage6">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="seventhSection" class="scrollArea " >
+      <div class="container-fluid mt-2 mb-5">
+        <div class="row seventhSection mt-3 pt-5 mb-5">
+            <div class="col-md-5 d-flex flex-column ps-2 sectionContainer mt-3 pt-5">
+              <p class="fs-4 fw-bold ps-5 drawerPargColor">Contact Us</p>
+              <p class="sectionParg pt-2 fs-5 lh-base ps-5 mb-5">
+                Send Your Message To Us .
+              </p>
+            </div>
+            <div class="col-md-6 d-flex pe-0 mt-3 ">
+              <form class="row g-3 needs-validation d-flex justify-content-center" [formGroup]="contactUsForm" (ngSubmit)="SubmitContactUsForm()">
+                <div class="col-md-6 col-lg-6 col-8 flex-column">
+                  <input type="text" class="form-control mt-3 col-12" id="Name" name="name" placeholder="Name "
+                    [class.is-invalid]="Name?.invalid&&Name?.touched" [class.is-valid]="Name?.valid" formControlName="name" />
+                    <small *ngIf="Name?.errors?.['required']" class="col-12 ps-2 text-danger" [hidden]=" Name?.valid ||Name?.untouched">
+                      Name is required .
+                    </small>
+                    <small *ngIf="Name?.errors?.['pattern']" class="col-12 ps-2 text-danger" [hidden]=" Name?.valid ||Name?.untouched">
+                      Name not valid enter valid name (min 4 characters) .
+                    </small>
+                  </div>
+                <div class="col-md-6 col-lg-6 col-8 flex-column">
+                  <input type="email" class="form-control mt-3 col-12" id="Email" name="email" placeholder="Email"
+                    [class.is-invalid]="Email?.invalid&&Email?.touched" [class.is-valid]="Email?.valid" formControlName="email" />
+                    <small *ngIf="Email?.errors?.['required']" class="text-danger col-12 ps-2" [hidden]=" Email?.valid ||Email?.untouched">
+                      Email is required .
+                    </small>
+                    <small *ngIf="Email?.errors?.['pattern']" class="text-danger col-12 ps-2" [hidden]=" Email?.valid ||Email?.untouched">
+                      Email not valid enter valid email (ex:Name@gmail.com) .
+                    </small>
+                  </div>
+                <div class="col-md-6 col-lg-6 col-8 flex-column">
+                  <input type="number" class="form-control mt-3 col-12 no-arrow" id="MobileNumber" name="mobileNumber" placeholder="Mobile number"
+                    [class.is-invalid]="MobileNumber?.invalid&&MobileNumber?.touched" [class.is-valid]="MobileNumber?.valid" formControlName="phone_number" />
+                    <small *ngIf="MobileNumber?.errors?.['required']" class="col-12 ps-2 text-danger" [hidden]=" MobileNumber?.valid ||MobileNumber?.untouched">
+                      Mobile number is required .
+                    </small>
+                    <small *ngIf="MobileNumber?.errors?.['pattern']" class="col-12 ps-2 text-danger" [hidden]=" MobileNumber?.valid ||MobileNumber?.untouched">
+                      Mobile number must be 11 characters .
+                    </small>
+                  </div>
+                <div class="col-md-6 col-lg-6 col-8 flex-column">
+                  <input type="text" class="form-control mt-3 col-12" id="Subject" name="subject" placeholder="Subject"
+                    [class.is-invalid]="Subject?.invalid&&Subject?.touched" [class.is-valid]="Subject?.valid" formControlName="subject" />
+                    <small *ngIf="Subject?.errors?.['required']" class="col-12 ps-2 text-danger" [hidden]=" Subject?.valid ||Subject?.untouched">
+                      Subject is required .
+                    </small>
+                    <small *ngIf="Subject?.errors?.['pattern']" class="col-12 ps-2 text-danger" [hidden]=" Subject?.valid ||Subject?.untouched">
+                      Subject not valid (min 4 characters)
+                    </small>
+                  </div>
+                <div class="col-md-6 col-lg-12 col-8 flex-column  MessageContent">
+                  <input type="text" class="form-control mt-3 col-8 MessageContentInput" id="MessageContent" name="message" placeholder="Message"
+                    [class.is-invalid]="Message?.invalid&&Message?.touched" [class.is-valid]="Message?.valid" formControlName="message" />
+                    <small *ngIf="Message?.errors?.['required']"class="col-12 ps-2 text-danger" [hidden]=" Message?.valid ||Message?.untouched">
+                      Message is required .
+                    </small>
+                    <small *ngIf="Message?.errors?.['pattern']"class="col-12 ps-2 text-danger" [hidden]=" Message?.valid ||Message?.untouched">
+                      Message not valid please enter valid message (min 10 characters).
+                    </small>
+                  </div>
+                <div class="col-md-6 col-lg-6 col-sm-4 pt-5 d-flex justify-content-center mb-5">
+                  <button class="btn col-lg-12 mt-3 fw-bold sandBtn" [disabled]="contactUsForm.invalid" >
+                    Send message
+                  </button>
+                </div>
+               
+  
+              </form>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="eighthSection" class="scrollArea">
+      <div class="container-fluid">
+        <div class="row eighthSection pt-5 ">
+            <div class="col-md-6 col-6 d-flex flex-column ps-5 subscribeContainer mt-2 pt-3 me-auto ps-3">
+              <p class="sectionPargSubscribe pt-2 fs-6 lh-base ps-5  text-white">
+                Subscribe Newsletter
+              </p>
+              <p class=" sectionPargSubscribe fs-4 fw-bold ps-5 mb-5 text-white">Lets Stay In Touch</p>
+            </div>
+            <form class="col-md-6 col-5 d-flex pe-0 mt-5 subscribeBtn needs-validation" [formGroup]="subscribeForm" (ngSubmit)=" SubscribeEmail?.valid?SubmitSubscribeForm():''">
+              <div class="input-group mb-3 subscribeBtn ms-auto me-4">
+                <input type="email" class="form-control" id="SubscribeEmail" name="email" placeholder="Enter your email"
+                [class.is-invalid]="SubscribeEmail?.invalid&&SubscribeEmail?.touched" [class.is-valid]="SubscribeEmail?.valid" formControlName="email" aria-describedby="button-addon1"/>
+                <button class="btn footerBtn fw-bold text-white"  id="button-addon1">Subscribe Now</button>
+                <small *ngIf="SubscribeEmail?.errors?.['required']" class="text-danger ps-2 col-12"[hidden]=" SubscribeEmail?.valid ||SubscribeEmail?.untouched">
+                  Email is required
+                </small>
+                <small *ngIf="SubscribeEmail?.errors?.['pattern']" class="text-danger ps-2 col-12"[hidden]=" SubscribeEmail?.valid ||SubscribeEmail?.untouched">
+                  Email not valid enter valid email (ex:Name@gmail.com) .
+                </small>
+              </div>
+            </form>
+        </div>
+      </div>
+    </section>
+  </section>
