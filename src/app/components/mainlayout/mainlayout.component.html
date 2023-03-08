@@ -236,8 +236,11 @@
               <div class="input-group mb-3 subscribeBtn ms-auto me-4">
                 <input type="email" class="form-control" id="SubscribeEmail" name="email" placeholder="Enter your email"
                 [class.is-invalid]="SubscribeEmail?.invalid&&SubscribeEmail?.touched" [class.is-valid]="SubscribeEmail?.valid" formControlName="email" aria-describedby="button-addon1"/>
-                <button class="btn footerBtn fw-bold text-white"  id="button-addon1">Subscribe Now</button>
-                <small *ngIf="SubscribeEmail?.errors?.['required']" class="text-danger ps-2 col-12"[hidden]=" SubscribeEmail?.valid ||SubscribeEmail?.untouched">
+                <button class="btn footerBtn fw-bold text-white"  id="button-addon1" (click)="subscribeBtnClick=true">Subscribe Now</button>
+                <small *ngIf="SubscribeEmail?.errors?.['required'] " class="text-danger ps-2 col-12"[hidden]=" SubscribeEmail?.valid ||SubscribeEmail?.untouched ">
+                  Email is required
+                </small>
+                <small *ngIf="SubscribeEmail?.errors?.['required']&&subscribeBtnClick" class="text-danger ps-2 col-12"[hidden]=" !subscribeBtnClick ||SubscribeEmail?.touched">
                   Email is required
                 </small>
                 <small *ngIf="SubscribeEmail?.errors?.['pattern']" class="text-danger ps-2 col-12"[hidden]=" SubscribeEmail?.valid ||SubscribeEmail?.untouched">

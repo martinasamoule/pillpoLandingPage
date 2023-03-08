@@ -15,6 +15,7 @@ export class MainlayoutComponent implements OnInit{
   showNavBar:boolean = false ;
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
   verticalPosition: MatSnackBarVerticalPosition = 'bottom';
+  subscribeBtnClick:boolean = false ;
 
   constructor(
     private FormBuild: FormBuilder, 
