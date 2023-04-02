@@ -21,7 +21,7 @@ var MainlayoutComponent = /** @class */ (function () {
         this.contactUsForm = FormBuild.group({
             email: ['', [forms_1.Validators.required, forms_1.Validators.pattern('[a-zA-Z0-9]{4,}(@)[a-zA-Z0-9]{3,}(?!\s)(.com)')]],
             name: ['', [forms_1.Validators.required, forms_1.Validators.pattern('[a-zA-Z /s]{4,}')]],
-            phone_number: ['', [forms_1.Validators.required, forms_1.Validators.pattern('^[01][0-9]{9}$')]],
+            phone_number: ['', [forms_1.Validators.required, forms_1.Validators.pattern('^01[0-9]{9}')]],
             subject: ['', [forms_1.Validators.required, forms_1.Validators.pattern('[a-zA-Z0-9 /s]{4,}')]],
             message: ['', [forms_1.Validators.required, forms_1.Validators.pattern('[a-zA-Z0-9 /s]{10,}')]]
         });

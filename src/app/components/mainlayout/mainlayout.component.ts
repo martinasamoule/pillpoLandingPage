@@ -25,7 +25,7 @@ export class MainlayoutComponent implements OnInit{
     this.contactUsForm = FormBuild.group({
       email: ['', [Validators.required, Validators.pattern('[a-zA-Z0-9]{4,}(@)[a-zA-Z0-9]{3,}(?!\s)(.com)')]],
       name: ['',[Validators.required ,Validators.pattern('[a-zA-Z /s]{4,}')]],
-      phone_number: ['',[Validators.required,Validators.pattern('^[01][0-9]{9}$')]],
+      phone_number: ['',[Validators.required,Validators.pattern('^01[0-9]{9}')]],
       subject: ['',[Validators.required,Validators.pattern('[a-zA-Z0-9 /s]{4,}')]],
       message: ['',[Validators.required,Validators.pattern('[a-zA-Z0-9 /s]{10,}')]],
     });
